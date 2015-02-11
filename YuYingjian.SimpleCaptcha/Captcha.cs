@@ -32,25 +32,6 @@ namespace YuYingjian.SimpleCaptcha
         }
 
         /// <summary>
-        /// 将小写的Code记录下来
-        /// </summary>
-        /// <param name="remember"></param>
-        public void Remember(Action<string> remember)
-        {
-            remember.Invoke(Code.ToLower());
-        }
-
-        /// <summary>
-        /// 验证小写的Code是否与记录的一致
-        /// </summary>
-        /// <param name="isValid"></param>
-        /// <returns></returns>
-        public bool IsValid(Func<string, bool> isValid)
-        {
-            return isValid.Invoke(Code.ToLower());
-        }
-
-        /// <summary>
         /// 生成验证码
         /// </summary>
         /// <param name="length">指定验证码的长度</param>
