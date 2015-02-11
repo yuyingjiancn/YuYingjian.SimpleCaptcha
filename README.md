@@ -39,3 +39,6 @@ visual studio 2013编写 .net framework 4.5.1
                 }
             }
 ```
+
+###NuGet
+PM> Install-Package YuYingjian.SimpleCaptcha
